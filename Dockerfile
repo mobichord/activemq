@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:edge
 MAINTAINER Sebastien LANGOUREAUX (linuxworkgroup@hotmail.com)
 
 # Application settings
@@ -9,7 +9,7 @@ ENV CONFD_PREFIX_KEY="/activemq" \
     S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \
     LANG="en_US.utf8" \
     APP_HOME="/opt/activemq" \
-    APP_VERSION="5.15.2" \
+    APP_VERSION="5.15.8" \
     SCHEDULER_VOLUME="/opt/scheduler" \
     USER=activemq \
     GROUP=activemq \
