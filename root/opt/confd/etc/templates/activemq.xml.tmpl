@@ -68,7 +68,7 @@
             http://activemq.apache.org/jmx.html
         -->
         <managementContext>
-            <managementContext createConnector="false"/>
+            <managementContext createConnector="{{getv "/config/createconnector" "true"}}"/>
         </managementContext>
 
         <!--
