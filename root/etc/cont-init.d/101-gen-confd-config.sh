@@ -125,3 +125,16 @@ keys = [
   "/config"
 ]
 EOF
+
+cat << EOF > ${CONFD_HOME}/etc/conf.d/env.toml
+[template]
+prefix = "${CONFD_PREFIX_KEY}"
+src = "env.tmpl"
+dest = "${APP_HOME}/bin/env"
+mode = "0744"
+gid = $GID
+uid = $UID
+keys = [
+  "/config"
+]
+EOF
